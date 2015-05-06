@@ -1,5 +1,7 @@
 # 遮罩js
+===================================
 ##引导微信分享遮罩js
+-----------------------------------
 <!--分享遮罩-->
 <script type="text/javascript">
 
@@ -72,17 +74,19 @@
 </script>
 
 # 遮罩css
-##分享遮罩
-*#cover{display:none;position:absolute;left:0;top:0;z-index:18888;background-color:#000000;opacity:0.7;}
-*#guide{display:none;position:absolute;right:18px;top:5px;z-index:19999;}
-*#guide img{width:260px;height:180px;}
+-----------------------------------
+###分享遮罩
+   #cover{display:none;position:absolute;left:0;top:0;z-index:18888;background-color:#000000;opacity:0.7;}
+   #guide{display:none;position:absolute;right:18px;top:5px;z-index:19999;}
+   #guide img{width:260px;height:180px;}
 
 # 遮罩html
-##遮罩html部分
-<div id="cover"></div>
-<div id="guide"><img src="images/town_recommend_m/shareto.png" width="278" height="198"></div>  
+-----------------------------------
+###遮罩html部分
+    <div id="cover"></div>
+    <div id="guide"><img src="images/town_recommend_m/shareto.png" width="278" height="198"></div>  
 
-##遮罩html调用方法
-<div class="shareto" onClick="_system._guide(true)">分享</div>
+###遮罩html调用方法
+   <div class="shareto" onClick="_system._guide(true)">分享</div>
 
-事件触发方法：onClick="_system._guide(true)"
+   事件触发方法：onClick="_system._guide(true)"
