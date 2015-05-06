@@ -32,11 +32,11 @@ body{ background:#d9d9d9; font-size:62.5%;}
 .conbox ul li .pro_pic{ width:55%; float:left;}
 .conbox ul li .pro_info{ width:42%; padding-left:2%; float:left;}
 .conbox ul li .pro_pic img{max-width:100%; height:auto; display:block;}
-.conbox ul li .pro_title{ width:100%; margin-top:.3rem; height:1.6rem; line-height:.8rem; float:left; color:#929292; text-overflow:ellipsis;}
+.conbox ul li .pro_title{ width:100%; margin-top:.3rem; height:1.6rem; line-height:.8rem; font-size:0.8rem; float:left; color:#929292; text-overflow:ellipsis;}
 .conbox ul li .pro_price{ width:100%; color:#d90000; font-size:.9rem; background:}
 .conbox ul li .pro_buy{ width:95%; margin-top:-.3rem;}
-.conbox ul li .pro_buy a{ padding:.2rem .5rem; float:right; background:#16bb5c; color:#fff; -webkit-border-radius:.3rem; -moz-border-radius:.3rem; border-radius:.3rem;}
-.conbox ul li .pro_store{ padding:.3rem 0; }
+.conbox ul li .pro_buy a{ padding:.2rem .5rem; float:right; background:#16bb5c; color:#fff; -webkit-border-radius:.3rem; -moz-border-radius:.3rem; border-radius:.3rem; font-size:0.8rem;}
+.conbox ul li .pro_store{ padding:.3rem 0; font-size:0.8rem;}
 .shareto{ width:100%; padding:.8rem 0; background:#16bb5c; color:#fff; margin-top:2.5rem; float:left; font-size:1.2rem; text-align:center;}
 
 /*心形组件*/
