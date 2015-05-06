@@ -4,7 +4,7 @@ body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, th, td, pre, blockquote
 body, input, button, textarea, select{font-size:12px; font-family: "Microsoft YaHei", Helvetica, Tahoma, Arial, sans-serif;}
 h1, h2, h3, em, i, th, caption, cite, code, address{font-style: normal; font-weight: normal;}
 ul, ol{list-style: none;}
-img, fieldset{border: 0 none;}
+img, fieldset{border: 0 none;} 
 input, textarea{outline: none;}
 table{border-collapse: collapse; border-spacing: 0;}
 button, input, select, label{vertical-align:middle;}
