@@ -89,3 +89,7 @@
 	<div class="shareto" onClick="_system._guide(true)">分享</div>
 
      事件触发方法：onClick="_system._guide(true)"
+
+###备注
+	httpserver.js是基于node的web服务器文件，仅供本地测试html页面效果使用，安装谷歌二维码插件，可以扫描二维码在手机上查看页面在移动端效果。
+	注：有人说谷歌浏览器可以模拟手机端页面测试啊? 不过我最近发现谷歌浏览器的模拟页面效果与手机上存在细节差异，建议也要自己在手机上测试一下。
