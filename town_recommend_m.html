@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小镇推荐-触屏版</title>
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<base target="_blank">
+<link href="css/town_recommend_m.css" rel="stylesheet">
+<!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<section class="top_banner"><img src="images/town_recommend_m/banner.jpg"></section>
+<section class="con">
+	<div class="conbt"><h1>小镇推荐精品<em></em></h1></div>
+    <article class="conbox">
+    	<ul>
+        	<li>
+            	<div class="pro_pic"><img src="images/town_recommend_m/pro.jpg"></div>
+                <div class="pro_info">
+                	<p class="pro_title">冰种晴水金扣站佛挂件</p>
+                    <p class="pro_price">￥28880元</p>
+                    <p class="pro_store"><span class="heart"></span>2000</p>
+                    <p class="pro_buy"><a>立刻抢购</a></p>
+                </div>
+            </li>
+            <li>
+            	<div class="pro_pic"><img src="images/town_recommend_m/pro.jpg"></div>
+                <div class="pro_info">
+                	<p class="pro_title">冰种晴水金扣站佛挂件</p>
+                    <p class="pro_price">￥28880元</p>
+                    <p class="pro_store"><span class="heart"></span>2000</p>
+                    <p class="pro_buy"><a>立刻抢购</a></p>
+                </div>
+            </li>
+            <li>
+            	<div class="pro_pic"><img src="images/town_recommend_m/pro.jpg"></div>
+                <div class="pro_info">
+                	<p class="pro_title">冰种晴水金扣站佛挂件</p>
+                    <p class="pro_price">￥28880元</p>
+                    <p class="pro_store"><span class="heart"></span>2000</p>
+                    <p class="pro_buy"><a>立刻抢购</a></p>
+                </div>
+            </li>
+            <li>
+            	<div class="pro_pic"><img src="images/town_recommend_m/pro.jpg"></div>
+                <div class="pro_info">
+                	<p class="pro_title">冰种晴水金扣站佛挂件</p>
+                    <p class="pro_price">￥28880元</p>
+                    <p class="pro_store"><span class="heart"></span>2000</p>
+                    <p class="pro_buy"><a>立刻抢购</a></p>
+                </div>
+            </li>
+            <li>
+            	<div class="pro_pic"><img src="images/town_recommend_m/pro.jpg"></div>
+                <div class="pro_info">
+                	<p class="pro_title">冰种晴水金扣站佛挂件</p>
+                    <p class="pro_price">￥28880元</p>
+                    <p class="pro_store"><span class="heart"></span>2000</p>
+                    <p class="pro_buy"><a>立刻抢购</a></p>
+                </div>
+            </li>
+        </ul>
+    </article>
+</section>
+<div class="shareto" onClick="_system._guide(true)">分享</div>
+
+<!--footer start-->
+
+<!--footer end-->
+<!--收藏-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+ ;(function(){
+	$('.pro_store').click(function(){
+		$(this).find($('.heart')).toggleClass('active');
+	 		})
+	 })()
+</script>
+<!--返回顶部-->
+<p id="back-to-top"><a href="#top"><span>返回顶部</span></a></p>
+<script> 
+$(function(){  
+        //当滚动条的位置处于距顶部200像素以下时，跳转链接出现，否则消失  
+        $(function () {  
+            $(window).scroll(function(){  
+                if ($(window).scrollTop()>200){  
+                    $("#back-to-top").fadeIn(100);  
+                }  
+                else  
+                {  
+                    $("#back-to-top").fadeOut(100);  
+                }  
+            });  
+  
+            //当点击跳转链接后，回到页面顶部位置    
+            $("#back-to-top").click(function(){  
+                $('body,html').animate({scrollTop:0},100);  
+                return false;  
+            });  
+        });  
+    });  
+</script>
+
+<!--分享遮罩-->
+<script type="text/javascript">
+
+    var _system={
+
+        $:function(id){return document.getElementById(id);},
+
+   _client:function(){
+
+      return {w:document.documentElement.scrollWidth,h:document.documentElement.scrollHeight,bw:document.documentElement.clientWidth,bh:document.documentElement.clientHeight};
+
+   },
+
+   _scroll:function(){
+
+      return {x:document.documentElement.scrollLeft?document.documentElement.scrollLeft:document.body.scrollLeft,y:document.documentElement.scrollTop?document.documentElement.scrollTop:document.body.scrollTop};
+
+   },
+
+   _cover:function(show){
+
+      if(show){
+
+     this.$("cover").style.display="block";
+
+     this.$("cover").style.width=(this._client().bw>this._client().w?this._client().bw:this._client().w)+"px";
+
+     this.$("cover").style.height=(this._client().bh>this._client().h?this._client().bh:this._client().h)+"px";
+
+  }else{
+
+     this.$("cover").style.display="none";
+
+  }
+
+   },
+
+   _guide:function(click){
+
+      this._cover(true);
+
+      this.$("guide").style.display="block";
+
+      this.$("guide").style.top=(_system._scroll().y+5)+"px";
+
+      window.onresize=function(){_system._cover(true);_system.$("guide").style.top=(_system._scroll().y+5)+"px";};
+
+  if(click){_system.$("cover").onclick=function(){
+
+         _system._cover();
+
+         _system.$("guide").style.display="none";
+
+ _system.$("cover").onclick=null;
+
+ window.onresize=null;
+
+  };}
+
+   },
+
+   _zero:function(n){
+
+      return n<0?0:n;
+
+   }
+
+}
+
+</script>
+<div id="cover"></div>
+<div id="guide"><img src="images/town_recommend_m/shareto.png" width="278" height="198"></div>  
+</body>
+</html>
